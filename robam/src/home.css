@@ -341,6 +341,13 @@
         /* 头部 */
         /* <!-- 中部内容区↓ --> */
         /* 左侧导航+轮播图 */
+        /* 轮播图↓ */
+        
+        .banner li img {
+            width: 985px;
+            height: 491px;
+        }
+        /* 轮播图↑ */
         
         .wel-links .left li:hover .tit {
             background-color: #404040;
@@ -692,9 +699,8 @@
             transition: background 0.3s;
         }
         
-        .wel-links .right-banner .btns span:hover,
-        .wel-links .right-banner .btns span.cur {
-            background: url(https://img.shoprobam.com/Public/pcnew_xb/svg/banner_h.svg) no-repeat center;
+        .cur {
+            background: url(https://img.shoprobam.com/Public/pcnew_xb/svg/banner_h.svg) no-repeat center !important;
         }
         
         .wel-links .right-banner a.jt {
@@ -1865,4 +1871,84 @@
         
         .hover:hover .ewm {
             display: block
+        }
+        /* 楼梯 */
+        
+        .left-flexed.minwidth {
+            padding: 0 6px;
+            width: 75px;
+            /* margin-top: -25%; */
+            right: 0;
+        }
+        
+        .left-flexed {
+            position: fixed;
+            top: 50%;
+            right: 10px;
+            padding: 0 4px;
+            left: 15px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            z-index: 10;
+            margin-top: -217px;
+        }
+        
+        .left-flexed.minwidth li {
+            width: 75px;
+            height: 56px;
+            padding: 11px 0 10px;
+        }
+        
+        .left-flexed li {
+            width: 75px;
+            text-align: center;
+            position: relative;
+            padding: 17px 0 10px;
+            border-top: 1px solid #ececec;
+            cursor: pointer;
+        }
+        
+        .left-flexed.minwidth li {
+            width: 75px;
+            padding: 11px 0 10px;
+        }
+        
+        .left-flexed li a {
+            display: block;
+            width: 100%;
+        }
+        
+        .left-flexed.minwidth li .img {
+            width: 29px;
+            height: 29px;
+        }
+        
+        .left-flexed li .ico5 {
+            background: url(img/right05.svg) no-repeat center;
+        }
+        
+        .left-flexed li .img {
+            width: 75px;
+            height: 75px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .left-flexed li p {
+            font-size: 12px;
+            color: #707070;
+            line-height: 30px;
+            webkit-transition: color 0.3s;
+            -moz-transition: color 0.3s;
+            -o-transition: color 0.3s;
+            transition: color 0.3s;
+        }
+        
+        .minwidth li h4 {
+            line-height: 56px
+        }
+        
+        .active {
+            background-color: red;
+            color: #Fff
         }

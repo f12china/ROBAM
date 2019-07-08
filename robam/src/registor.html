@@ -15,23 +15,23 @@
     <div class="header">
         <div class="site-header ma1 clearfix">
             <div class="fl logo">
-                <a href="script:;"><img src="https://img.shoprobam.com/Public/pcnew_xb/img/logo_40.png" width="280px"></a>
+                <a href="script:;"><img src="img/logo_40.png" width="280px"></a>
             </div>
             <div class="fr l-three-i">
                 <div class="l-t-w fl f14">
-                    <div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/l-icon1.png" width="42"></div>
+                    <div class="fl"><img src="img/l-icon1.png" width="42"></div>
                     <div class="fr col-nine">
                         <h3 class="col-black">全国联保</h3>600家服务网点联合质保
                     </div>
                 </div>
                 <div class="l-t-w fl f14">
-                    <div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/f-icon6-blue.png" width="42"></div>
+                    <div class="fl"><img src="img/f-icon6-blue.png" width="42"></div>
                     <div class="fl col-nine" style="padding-left:10px;">
                         <h3 class="col-black">100%免费配送</h3>承诺送货到户
                     </div>
                 </div>
                 <div class="l-t-w1 fl f14">
-                    <div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/f-icon4-blue.png" width="42"></div>
+                    <div class="fl"><img src="img/f-icon4-blue.png" width="42"></div>
                     <div class="fl col-nine" style="padding-left:10px;">
                         <h3 class="col-black">15天无理由退货</h3>质量保证 售后无忧
                     </div>
@@ -50,29 +50,36 @@
 
                     <tr>
                         <td>用户名</td>
-                        <td><input type="text" name="userName" id="userName" /></td>
+                        <td><input type="text" name="userName" id="userName" placeholder="请填写用户名"></td>
                     </tr>
                     <tr>
                         <td>密码</td>
-                        <td><input type="password" name="pwd" id="pwd" /></td>
+                        <td><input type="password" name="pwd" id="pwd" placeholder="6~20位数字、字符任意组合"></td>
                     </tr>
                     <tr>
                         <td>确认密码</td>
-                        <td><input type="password" name="repwd" id="repwd" /></td>
+                        <td><input type="password" name="repwd" id="repwd" placeholder="请再次输入密码"></td>
                     </tr>
                     <tr>
                         <td>邮箱 </td>
-                        <td><input type="text" name="email" id="email" /></td>
+                        <td><input type="text" name="email" id="email" placeholder="请输入邮箱"></td>
+                    </tr>
+                    <tr>
+                        <td>手机号码：</td>
+                        <td><input type="text" name="phone" placeholder="手机号由11位数字组成，且以13,15,18开头">
+                        </td>
                     </tr>
 
-                    <tr>
-                        <td><a href="#" onclick="return valForm()">注册</a> <a href="">重填</a></td>
-                    </tr>
                 </table>
+
+
+                <input type="button" value="注册" class="zhuce">
+                <input type="button" value="重置" class="zhuce chongzhi">
             </form>
         </fieldset>
     </div>
-
+    <script src="script/js/jquery.js"></script>
+    <script src="script/js/verification.js"></script>
 </body>
 
 </html>
