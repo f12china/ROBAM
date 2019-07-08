@@ -1,0 +1,149 @@
+.header {
+    width: 100%;
+    background: #fff;
+}
+
+.site-header {
+    height: 100px;
+    background: #fff;
+}
+
+.ma1 {
+    width: 1002px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    zoom: 1;
+    z-index: 1;
+}
+
+.logo {
+    padding: 39px 0 37px;
+}
+
+.fl {
+    float: left;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #666;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.fr {
+    float: right;
+}
+
+div,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+    zoom: 1;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+img,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+.l-t-w1,
+.l-t-w {
+    width: 210px;
+    margin: 30px 0 0 20px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.col-nine {
+    color: #999;
+}
+
+.col-black {
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+
+/* ------------------登入 */
+
+.login {
+    margin: 90px auto;
+}
+
+.ma1 {
+    width: 1002px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin: 10px 0
+}
+
+table {
+    margin: 0 auto;
+    padding: 10px 0
+}
+
+fieldset {
+    width: 400px;
+    margin: 0 auto
+}
+
+legend {
+    margin: 0 auto;
+    font-size: 30px
+}
+
+.dr {
+    padding: 2px 6px
+}
