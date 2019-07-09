@@ -41,7 +41,7 @@
     </div>
     <!-- ---登入--- -->
     <div class="login">
-        <form action="">
+        <form action="http://localhost/items1905xsc/ROBAM/robam/php/login.php" method="post">
             <fieldset>
                 <legend>
                     登入帐号
@@ -54,16 +54,21 @@
                     </tr>
                     <tr>
                         <td>密码</td>
-                        <td><input type="password" name="pwd" id="pwd"></td>
+                        <td><input type="password" name="repwd" id="pwd"><span class="span"></span></td>
                     </tr>
                     <tr>
-
-                        <td><input type="submit" name="pwd" id="pwd" value="登入" class="submit"></td>
+                        <td><input type="submit" name="pwd" id="dengru" value="登入" class="submit"></td>
                     </tr>
                     <table>
+                        <a href="http://10.31.158.51/items1905xsc/ROBAM/robam/src/registor.html">
+                            <p class="zhuce">帐号注册</p>
+                        </a>
+
             </fieldset>
         </form>
     </div>
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script src="script/js/login.js"></script>
 </body>
 
 </html>

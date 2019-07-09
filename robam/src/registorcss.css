@@ -117,6 +117,7 @@ h6 {
 
 fieldset {
     padding: 30px;
+    width: 100%;
 }
 
 legend {
@@ -125,7 +126,7 @@ legend {
 
 .main {
     margin: 0 auto;
-    width: 50%
+    width: 800px
 }
 
 input {
@@ -142,4 +143,8 @@ input {
     float: right;
     margin: 25px 25px 0 0;
     cursor: pointer;
+}
+
+.span {
+    margin-left: 20px
 }

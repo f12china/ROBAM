@@ -44,42 +44,40 @@
     <div class="main">
         <fieldset>
             <legend>帐号注册</legend>
-            <form action="" method="post">
+            <form action="http://localhost/items1905xsc/ROBAM/robam/php/registor.php" method="post" id="form">
 
                 <table>
 
                     <tr>
                         <td>用户名</td>
-                        <td><input type="text" name="userName" id="userName" placeholder="请填写用户名"></td>
+                        <td><input type="text" name="userName" class="input" id="userName" placeholder="请填写用户名"><span class="span span0"></span></td>
                     </tr>
                     <tr>
                         <td>密码</td>
-                        <td><input type="password" name="pwd" id="pwd" placeholder="6~20位数字、字符任意组合"></td>
+                        <td><input type="password" name="pwd" class="input" id="pwd" placeholder="6~20位数字、字符任意组合"><span class="span span1"></span></td>
                     </tr>
                     <tr>
                         <td>确认密码</td>
-                        <td><input type="password" name="repwd" id="repwd" placeholder="请再次输入密码"></td>
+                        <td><input type="password" name="repwd" class="input" id="repwd" placeholder="请再次输入密码"><span class="span span2"></span></td>
                     </tr>
                     <tr>
                         <td>邮箱 </td>
-                        <td><input type="text" name="email" id="email" placeholder="请输入邮箱"></td>
+                        <td><input type="text" name="email" class="input" id="email" placeholder="请输入邮箱"><span class="span span3"></span></td>
                     </tr>
                     <tr>
                         <td>手机号码：</td>
-                        <td><input type="text" name="phone" placeholder="手机号由11位数字组成，且以13,15,18开头">
+                        <td><input type="text" name="phone" class="input" placeholder="手机号由11位数字组成，且以13,15,18开头"><span class="span span4"></span>
                         </td>
                     </tr>
 
                 </table>
 
-
-                <input type="button" value="注册" class="zhuce">
+                <input type="submit" value="注册" name="submit" class="submit zhuce">
                 <input type="button" value="重置" class="zhuce chongzhi">
             </form>
         </fieldset>
     </div>
     <script src="script/thirdplugins/jquery.js"></script>
-    <script src="script/thirdplugins/jquery.validate.js"></script>
     <script src="script/js/verification.js"></script>
 </body>
 

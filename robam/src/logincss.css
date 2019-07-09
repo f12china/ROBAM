@@ -131,7 +131,8 @@ input {
 
 table {
     margin: 0 auto;
-    padding: 10px 0
+    padding: 10px 0;
+    position: relative;
 }
 
 fieldset {
@@ -146,4 +147,26 @@ legend {
 
 .dr {
     padding: 2px 6px
+}
+
+fieldset {
+    position: relative;
+}
+
+.submit {
+    position: absolute;
+    bottom: -20px;
+    right: 120px;
+    padding: 2px
+}
+
+.zhuce {
+    border: 1px solid #000;
+    display: inline-block;
+    position: absolute;
+    bottom: 9px;
+    right: 88px;
+    font-size: 12px;
+    padding: 3px;
+    font-weight: bolder
 }
