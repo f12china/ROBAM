@@ -136,18 +136,20 @@
     <form id="goodsForm" name="goodsForm" method="post" action="#"><input type="hidden" name="gid" value="1070" id="gid">
         <div class="main">
             <div class="inner outer">
-                <div class="shopping-show">
-                    <div class="shopping-big"><a><span class="ks-imagezoom-wrap" id="ks-imagezoom-wrap"><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190429/1556515271974.jpg"><div class="microscope" style="left: 187px; top: 0px; display: none;"></div></span></a>
-                        <div id="video" style=""><i class="tm-video-play J_playVideo" onclick="startVideo()" style="display: inline;"></i><i class="tm-video-stop J_stopVideo"></i>
-                            <div class="tm-video-box" style="background-color: rgb(0, 0, 0); display: none;">
-                                <div class="videoClose" onclick="videoClose()"></div><video controls="" autoplay="" width="502" height="500" id="videoPlay"><source src="/Public/video/27A5_2.mp4" type="video/mp4"><video></video></video>
-                            </div>
-                        </div>
 
+                <!-- 图片放大镜 -->
+                <div class="shopping-show">
+                    <div class="shopping-big">
+                        <a>
+                            <span class="ks-imagezoom-wrap" id="ks-imagezoom-wrap">
+                                <img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190429/1556515271974.jpg">
+                                <div class="microscope" style="left: 187px; top: 0px; display: none;"></div>
+                            </span>
+                        </a>
                     </div>
                     <div class="magnifier" style="display: none;"><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190429/1556515271974.jpg" style="top: 0px; left: -625px;"></div>
                     <div class="shopping-list">
-                        <div class="btn-left"><img src="https://img.shoprobam.com/Public/pcnew/img/left.png"></div>
+                        <div class="btn-left"><img src="img/left.png"></div>
                         <div class="shopping-view">
                             <ul class="outer" style="width: 946px;">
                                 <li><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190429/1556515271974.jpg" width="100%"></li>
@@ -163,7 +165,7 @@
                                 <li><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20180616/15291645951721.jpg" width="100%"></li>
                             </ul>
                         </div>
-                        <div class="btn-right"><img src="https://img.shoprobam.com/Public/pcnew/img/right.png"></div>
+                        <div class="btn-right"><img src="img/right.png"></div>
                     </div>
                 </div>
                 <div class="shopping-description">
@@ -171,9 +173,6 @@
                     <p class="goods_remark">【即刻起购1元拼团链接发起组队拼团抢半价特权、瓜分超值豪礼】<br>【7月8点0点开抢，领券下单满4000减400，3000减300，2000减200，1000减100；咨询客服有惊喜！！！】<br>【实付满10000元加赠电压力锅、满15000元加赠西屋破壁机】<br>【下单赠价值299元刀具七件套，全网保价45天买贵退差！】<br>【烟灶搭配蒸/烤/洗任意1件享9折，2件享88折，详询客服！】<br>【购任意商品即可加600元换购J381净水机】</p>
                     <p class="goods_remark" style="display:none" id="gbb"> 【咨询客服下单额外加赠BaoBao服务免费上门清洗一次，<a href="/Products/detail/gid/148" target="_blank">点击查看BaoBao服务详情</a>，详询客服】
                     </p>
-                    <div class="timelimit outer" style="" data-stime="2019-06-21 00:00:00" data-etime="2019-07-12 23:59:59">
-                        <div class="timelimit-btn">限时抢购</div>
-                        <div class="limittime">该商品距开始 : <span>4</span>天<span>13</span>时<span>50</span>分<span>47</span>秒</div><a href="" style="display: none;">前往活动专场</a></div>
 
                     <div class="promotion">
                         <div class="promotion-price">
@@ -259,6 +258,9 @@
         </div>
     </form>
     <!-- 商品详情↑----------- -->
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script src="script/js/details.js"></script>
+
 </body>
 
 </html>
