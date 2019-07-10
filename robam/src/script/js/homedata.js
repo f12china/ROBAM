@@ -12,9 +12,7 @@
                 htmlstr += `
                 <div class="charu">
                 <li class="productTab ">
-                 
-                    <!-- 活动小标签 -->
-                    <a href="script:; ">
+                    <a href="./details.html?id=${e.id}" target="_blank">
                         <div class="pic fl "><img class="lazy" data-original="${e.pic}"></div>
                         <div class="con fr ">
                             <h2>${e.title}</h2>

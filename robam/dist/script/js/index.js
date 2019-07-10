@@ -1,0 +1,1 @@
+"use strict";!function(a){a.ajax({url:"php/banner.php",dataType:"json"}).done(function(n){a.each(n,function(n,a){})}),a.ajax({url:"php/banner.php",dataType:"json"}).done(function(n){a.each(n,function(n,a){})}),a.ajax({url:"php/banner.php",dataType:"json"}).done(function(n){a.each(n,function(n,a){})})}(jQuery),jQuery,jQuery,jQuery;

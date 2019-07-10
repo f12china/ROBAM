@@ -1,0 +1,1 @@
+"use strict";function djs(){var t=new Date,e=new Date("2019-8-8 00:00:00"),n=parseInt((e-t)/1e3/86400),s=parseInt((e-t)/1e3%86400/3600),a=parseInt((e-t)/1e3%3600/60),r=parseInt((e-t)/1e3%60);$(".int_days").html(n),$(".int_hours").html(s),$(".int_minutes").html(a),$(".int_seconds").html(r)}setInterval(djs,1e3);
