@@ -1,43 +1,49 @@
-;
-! function() {
-    let sid = location.search.substring(1).split('=')[1];
-    const spic = document.querySelector('.shopping-big');
-    const bpic = document.querySelector('.shopping-big');
-    const sf = document.querySelector('.microscope'); //小范围图片
-    const bf = document.querySelector('.magnifier'); //放大
-    const title = document.querySelector('.title'); //标题
-    const price = document.querySelector('.price');
-    const movelistUl = document.querySelector('.movelist ul');
-    const details = document.querySelector('.shopping-show');
-    const left = document.querySelector('.btn-left');
-    const right = document.querySelector('btn-right');
-    const btn = document.querySelector('#addToCart'); //加入购物车
-    // const goodsnumcount = document.querySelector('.goodsnum input');
-    // const linkbox = document.querySelector('.linkbox');
-    // const close = document.querySelector('.linkbox span');
-    // const closeA = document.querySelectorAll('.linkbox a');
+! function($) {
+    let id = location.search.split('?')[1].split('=')[1];
+    const $spic = $('.shopping-big img');
+    const $bpic = $('.shopping-big');
+    const $sf = $('.microscope'); //小范围图片
+    const $bf = $('.magnifier'); //放大
+    const $title = $('.title'); //标题
+    const $price = $('.price');
+    const $movelistUl = $('.movelist ul');
+    const $details = $('.shopping-show');
+    const $left = $('.btn-left');
+    const $right = $('btn-right');
+    const $btn = $('#addToCart'); //加入购物车
+    // const $goodsnumcount =$('.goodsnum input');
+    // const $linkbox =$('.linkbox');
+    // const $close =$('.linkbox span');
+    // const $closeA =$All('.linkbox a');
+    // $spic[0] == 'img/15586937845544.png';
+    // console.log($spic[0])
 
-    ajax({
-        url: 'http://10.31.158.51/items1905xsc/ROBAM/robam/php/conndata.php',
-        data: {
-            picid: id
-        },
+    $.ajax({
+        url: 'http://10.31.158.51/items1905xsc/ROBAM/robam/php/pipeiid.php',
         dataType: 'json',
-        success: function(objdata) {
-            //1.拼接放大镜图片等信息
-            spic.querySelector('img').src = objdata.url;
-            spic.querySelector('img').setAttribute('sid', objdata.picid);
-            bpic.src = objdata.url;
-            title.innerHTML = objdata.title;
-            price.innerHTML = objdata.price;
-            //拼接小图列表。
-            let ullist = objdata.imgurls.split(',');
-            let lihtml = '';
-            for (let i = 0; i < ullist.length; i++) {
-                lihtml += '<li><img src="' + ullist[i] + '"></li>';
-            }
-            movelistUl.innerHTML = lihtml;
-            console.log(ullist);
+        data: {
+            id: id
         }
+    }).done(function(data) {
+        let tab = [];
+        tab = data.xqt.split(',');
+        // console.log(tab);
+        $spic.attr({ src: `${tab[0]}` });
+        $bpic.attr({ src: `${data.xqt}` });
+        $title.html(`${data.title}`);
+        $price.html(`${data.price}`);
+        //渲染详情页下面的tab切换列表 
+        let htmlstr = '';
+        $.each(tab, function(index, value) {
+            // console.log(value);
+            htmlstr += `
+            <li>
+            <img src="${value}" width="100%">
+            </li>
+            `
+        })
+        $('.shopping-view ul').html(htmlstr);
+
     });
-}();
+
+}(jQuery)
