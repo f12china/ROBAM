@@ -147,7 +147,7 @@
                             </span>
                         </a>
                     </div>
-                    <div class="magnifier" style="display: none;"><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190429/1556515271974.jpg" style="top: 0px; left: -625px;"></div>
+                    <div class="magnifier" style="display: none;"><img src="" style="top: 0px; left: -625px;"></div>
                     <div class="shopping-list">
                         <div class="btn-left"><img src="img/left.png"></div>
                         <div class="shopping-view">
@@ -181,7 +181,7 @@
                                 <div class="promotion-price"><span class="price-text">定金</span><span class="price">¥ 0.00</span><span class="price-dingjin">定金可抵用￥0.00</span></div>
                                 <div class="promotion-price"><span class="price-text">到手价</span><span class="reminloe">¥ 0.00</span><span class="reminloe_yuan">¥ 5199.00</span></div>
                             </div>
-                            <div class="promotion-price" id="GetLastP" style=""><span class="price-text">到手价</span><span class="price" style="font-size:14px; padding-left:5px;"><i>￥</i><label id="lastPrice">4799.00</label></span></div>
+                            <div class="promotion-price" id="GetLastP"><span class="price-text">到手价</span><span class="price" style="font-size:14px; padding-left:5px;"><i>￥</i><label id="lastPrice">4799.00</label></span></div>
                         </div>
                         <div class="gifts outer">
                             <div class="gifts-left">正在促销
@@ -189,8 +189,7 @@
                             </div>
                             <div class="gifts-right outer">
                                 <div class="kind outer">
-                                    <div class="kind-img"><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190322/15532178707312.jpg">
-                                        <div class="zhanshi"><img src="https://img.shoprobam.com//Public/Uploads/boss/goods/20190322/15532178707312.jpg"></div>
+                                    <div class="kind-img"><img src="img/15532178707312.jpg">
                                     </div>
                                     <div class="kind-title">
                                         <p>价值299元刀具七件套</p>
@@ -213,7 +212,12 @@
                         </div>
                     </div>
                     <div class="evaluation outer">
-                        <div class="client">客户满意<span><img src="https://img.shoprobam.com/Public/pcnew/img/xing.png"><img src="https://img.shoprobam.com/Public/pcnew/img/xing.png"><img src="https://img.shoprobam.com/Public/pcnew/img/xing.png"><img src="https://img.shoprobam.com/Public/pcnew/img/xing.png"><img src="https://img.shoprobam.com/Public/pcnew/img/xing.png"></span></div>
+                        <div class="client">客户满意<span>
+                            <img src="img/xing.png">
+                            <img src="img/xing.png">
+                            <img src="img/xing.png">
+                            <img src="img/xing.png">
+                            <img src="img/xing.png"></span></div>
                         <div class="hotcakes">热销<span class="price">4945</span></div>
                         <div class="hotcakes">评价<span id="comment_count">395</span></div>
                     </div>
@@ -238,7 +242,11 @@
                             <div class="optionnums outer">
                                 <div class="optionnums-title">数量</div>
                                 <div class="optionnums-add">
-                                    <div class="outer"><span onclick="countNumN(-1)">-</span><input id="item_num" name="num" type="number" value="1" max="1314" onblur="if (value == '') {value = '1'}" onfocus="if (value == '1') {value = ''}"><span onclick="countNumN(1)">+</span></div>
+                                    <div class="outer">
+                                        <span class="jian">-</span>
+                                        <input class='shuliang' name="num" type="text" value="1" readonly="readonly">
+                                        <span class="jia">+</span>
+                                    </div>
                                 </div>
                                 <div style="width:300px; line-height: 30px; padding-left: 20px; float: left; color:#999" id="showNum"></div>
                             </div><input type="hidden" name="type" value="item" id="item_type"><input type="hidden" value="" name="pdt_id" id="pdt_id"><input type="hidden" value="" name="pdt_stock" id="pdt_stock">
@@ -258,9 +266,22 @@
         </div>
     </form>
     <!-- 商品详情↑----------- -->
+    <div class="gouwu">
+        <h3>加入购物车成功 <span class="guangbi">X</span></h3>
+
+        <p>
+            <span class="jixu">
+               <a href="home.html"> 继续购物   </a>
+            </span>
+            <span class="jsrmb">
+               <a href="cart.html"> 前往购物车结算</a>
+            </span>
+        </p>
+    </div>
     <script src="script/thirdplugins/jquery.js"></script>
     <script src="script/thirdplugins/jquery.cookie.js"></script>
     <script src="script/js/details.js"></script>
+    <script src="script/js/magnify.js"></script>
 
 </body>
 
