@@ -689,7 +689,7 @@
             width: 11px;
             height: 11px;
             margin: 0 5px 0 4px;
-            background: url(https://img.shoprobam.com/Public/pcnew_xb/svg/banner.svg) no-repeat center;
+            background: url(img/banner.svg) no-repeat center;
             *display: inline;
             display: inline-block;
             cursor: pointer;
@@ -700,7 +700,7 @@
         }
         
         .cur {
-            background: url(https://img.shoprobam.com/Public/pcnew_xb/svg/banner_h.svg) no-repeat center !important;
+            background: url(img/banner_h.svg) no-repeat center !important;
         }
         
         .wel-links .right-banner a.jt {
@@ -712,7 +712,7 @@
         
         .wel-links .right-banner a.prev {
             left: 40px;
-            background: url(https://img.shoprobam.com/Public/pcnew_xb/svg/banner_left.svg) no-repeat center;
+            background: url(img/zuo.png) no-repeat center;
             background-size: 15px auto;
         }
         
@@ -736,7 +736,7 @@
         
         .wel-links .right-banner a.next {
             right: 40px;
-            background: url(https://img.shoprobam.com/Public/pcnew_xb/svg/banner_right.svg) no-repeat center;
+            background: url(img/you.png) no-repeat center;
             background-size: 15px auto;
         }
         
@@ -835,12 +835,12 @@
             width: 33px;
             *display: inline;
             display: inline-block;
-            color: red;
+            color: #fff;
             text-align: center;
             font-size: 20px;
             position: relative;
             top: -4px;
-            background: url(https://img.shoprobam.com/Public/pcnew_xb/img/pic101.png) no-repeat center;
+            background: url(img/pic101.png) no-repeat center;
         }
         /* 优惠商品 */
         

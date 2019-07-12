@@ -8,33 +8,31 @@
     $user_name.on('blur', function() {
         let $uval = $user_name.val();
         let $pval = $user_pwd.val();
+        let use = true,
+            pas = true,
+            pass = true,
+            ema = true,
+            pho = true;
+
         $.ajax({
             type: "post",
-            url: "http://localhost/items1905xsc/ROBAM/robam/php/registor.php",
+            url: "http://10.31.158.51/items1905xsc/ROBAM/robam/php/registor.php",
             data: {
                 "user_name": $uval,
                 "user_pwd": $pval
             },
             dataType: 'json',
             success: function(respond) {
-                if (!respond) {
-                    $errname.html('√');
-                    $errname.css({ "color": "green", "font-weight": "900", "font-size": "14px" });
-                    $userflag = true;
-                } else {
+                console.log(respond, 1)
+                if (respond) {
                     $errname.html('用户名已存在');
                     $errname.css({ "color": "red", "font-weight": "900", "font-size": "14px" });
-                    $userflag = false;
+
                 }
             }
         });
     })
 
-
-})(jQuery);
-
-
-(function($) {
     const aInput = document.querySelectorAll('input');
     let use = true,
         pas = true,
@@ -207,8 +205,8 @@
             $('.span0').html('请输入用户名');
             $('.span0').css({ "font-size": "12px", "color": "#ff0000" })
             use = false;
-
         }
+
         if ($('input').eq(1).val() === '') {
             $('.span1').html('请输入密码');
             $('.span1').css({ "font-size": "12px", "color": "#ff0000" })
@@ -240,4 +238,9 @@
             alert('注册成功')
         }
     });
-})(jQuery)
+})(jQuery);
+
+
+// (function($) {
+
+// })(jQuery)
