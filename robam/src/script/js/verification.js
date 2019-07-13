@@ -1,12 +1,12 @@
 (function($) {
-    const $user_name = $('input').eq(0);
+    const $userName = $('input').eq(0);
     const $user_pwd = $('input').eq(1);
     const $user_ema = $('input').eq(3);
     const $submit = $('.submit');
     const $errname = $('.span0');
     let $userflag = true; //检测用户名是否重复的标记，用来阻止提交
-    $user_name.on('blur', function() {
-        let $uval = $user_name.val();
+    $userName.on('input', function() {
+        let $uval = $userName.val();
         let $pval = $user_pwd.val();
         let use = true,
             pas = true,
@@ -18,7 +18,7 @@
             type: "post",
             url: "http://10.31.158.51/items1905xsc/ROBAM/robam/php/registor.php",
             data: {
-                "user_name": $uval,
+                "userName": $uval,
                 "user_pwd": $pval
             },
             dataType: 'json',
